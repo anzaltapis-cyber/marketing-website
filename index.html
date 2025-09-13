@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة الإبداع - التسويق الإلكتروني</title>
+    <title>شركة التسويق الرقمي - خدمات التسويق الإلكتروني</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #2D5BFF;
-            --secondary: #6C42FF;
-            --accent: #FF6B6B;
-            --dark: #333;
-            --light: #f8f9fa;
+            --primary: #2563eb;
+            --secondary: #4f46e5;
+            --accent: #f43f5e;
+            --dark: #1f2937;
+            --light: #f8fafc;
         }
         
         * {
@@ -26,6 +26,7 @@
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
+            padding-top: 80px;
         }
         
         .container {
@@ -35,7 +36,6 @@
             padding: 0 15px;
         }
         
-        /* التصميم العام */
         header {
             background: linear-gradient(to right, var(--primary), var(--secondary));
             color: white;
@@ -84,14 +84,15 @@
             color: var(--accent);
         }
         
-        /* قسم الهيرو */
         .hero {
-            padding: 150px 0 100px;
-            background: linear-gradient(rgba(45, 91, 255, 0.8), rgba(108, 66, 255, 0.8)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            padding: 100px 0;
+            background: linear-gradient(rgba(37, 99, 235, 0.8), rgba(79, 70, 229, 0.8)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
         }
         
         .hero h1 {
@@ -115,6 +116,8 @@
             font-weight: 600;
             transition: all 0.3s ease;
             margin: 5px;
+            border: none;
+            cursor: pointer;
         }
         
         .btn:hover {
@@ -123,9 +126,8 @@
             transform: translateY(-3px);
         }
         
-        /* أقسام الموقع */
         section {
-            padding: 80px 0;
+            padding: 60px 0;
         }
         
         .section-title {
@@ -144,7 +146,6 @@
             text-align: center;
         }
         
-        /* الخدمات */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -177,9 +178,11 @@
             margin-bottom: 15px;
         }
         
-        /* العملاء */
         .clients {
             background-color: #f1f2f6;
+            border-radius: 10px;
+            padding: 40px;
+            margin: 40px 0;
         }
         
         .clients-grid {
@@ -205,7 +208,6 @@
             color: var(--primary);
         }
         
-        /* الاتصال */
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
@@ -239,12 +241,13 @@
             min-height: 150px;
         }
         
-        /* الفوتر */
         footer {
             background: var(--dark);
             color: white;
             padding: 50px 0 20px;
             text-align: center;
+            margin-top: 40px;
+            border-radius: 10px 10px 0 0;
         }
         
         .footer-content {
@@ -280,7 +283,6 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        /* التجاوب مع الشاشات */
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -311,12 +313,11 @@
     </style>
 </head>
 <body>
-    <!-- الشريط العلوي -->
     <header>
         <div class="container header-content">
             <div class="logo">
                 <i class="fas fa-rocket"></i>
-                <span>شركة الإبداع</span>
+                <span>شركة التسويق الرقمي</span>
             </div>
             <nav>
                 <ul>
@@ -329,19 +330,15 @@
         </div>
     </header>
 
-    <!-- قسم الهيرو -->
-    <section class="hero">
-        <div class="container">
+    <div class="container">
+        <section class="hero">
             <h1>نحو عالم رقمي أكثر احترافية</h1>
             <p>نقدم حلول تسويقية مبتكرة تساعد عملك على النمو والازدهار في العالم الرقمي</p>
             <a href="#contact" class="btn">اطلب خدمتك الآن</a>
             <a href="#services" class="btn">استكشف خدماتنا</a>
-        </div>
-    </section>
+        </section>
 
-    <!-- قسم الخدمات -->
-    <section class="services" id="services">
-        <div class="container">
+        <section class="services" id="services">
             <h2 class="section-title">خدماتنا</h2>
             <p class="section-subtitle">نقدم مجموعة متكاملة من خدمات التسويق الإلكتروني المصممة خصيصًا لتنمية أعمالك</p>
             
@@ -370,12 +367,9 @@
                     <p>ننتج محتوى مبدعًا وجذابًا يحول الزوار إلى عملاء محتملين وعملاء دائمين</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- قسم العملاء -->
-    <section class="clients" id="clients">
-        <div class="container">
+        <section class="clients" id="clients">
             <h2 class="section-title">عملاؤنا</h2>
             <p class="section-subtitle">نفخر بثقة هذه الشركات الرائدة التي اختارتنا لتحقيق أهدافها التسويقية</p>
             
@@ -393,12 +387,9 @@
                     <i class="fas fa-tshirt"></i>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- قسم الاتصال -->
-    <section class="contact" id="contact">
-        <div class="container">
+        <section class="contact" id="contact">
             <h2 class="section-title">اتصل بنا</h2>
             <p class="section-subtitle">نحن هنا لمساعدتك، تواصل معنا اليوم لمناقشة احتياجاتك التسويقية</p>
             
@@ -427,49 +418,47 @@
                     <button type="submit" class="btn">إرسال الرسالة</button>
                 </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- الفوتر -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>عن شركتنا</h3>
-                    <p>نحن وكالة تسويق إلكتروني متخصصة في تقديم حلول تسويقية مبتكرة تساعد الشركات على النمو والازدهار في العالم الرقمي.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>روابط سريعة</h3>
-                    <p><a href="#" style="color: white;">الرئيسية</a></p>
-                    <p><a href="#services" style="color: white;">خدماتنا</a></p>
-                    <p><a href="#clients" style="color: white;">عملاؤنا</a></p>
-                    <p><a href="#contact" style="color: white;">اتصل بنا</a></p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>معلومات التواصل</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</p>
-                    <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
-                    <p><i class="fas fa-envelope"></i> info@example.com</p>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>عن شركتنا</h3>
+                        <p>نحن وكالة تسويق إلكتروني متخصصة في تقديم حلول تسويقية مبتكرة تساعد الشركات على النمو والازدهار في العالم الرقمي.</p>
+                    </div>
                     
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <div class="footer-section">
+                        <h3>روابط سريعة</h3>
+                        <p><a href="#" style="color: white;">الرئيسية</a></p>
+                        <p><a href="#services" style="color: white;">خدماتنا</a></p>
+                        <p><a href="#clients" style="color: white;">عملاؤنا</a></p>
+                        <p><a href="#contact" style="color: white;">اتصل بنا</a></p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>معلومات التواصل</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</p>
+                        <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                        <p><i class="fas fa-envelope"></i> info@example.com</p>
+                        
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
                     </div>
                 </div>
+                
+                <div class="copyright">
+                    <p>© 2023 جميع الحقوق محفوظة لشركة التسويق الرقمي</p>
+                </div>
             </div>
-            
-            <div class="copyright">
-                <p>© 2023 جميع الحقوق محفوظة لشركة الإبداع</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script>
-        // كود جافاسكريبت بسيط لتغيير لون الشريط العلوي عند التمرير
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -479,7 +468,6 @@
             }
         });
         
-        // كود بسيط لمنع إرسال النموذج (لأغراض العرض فقط)
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('شكرًا لتواصلك معنا! سنرد عليك قريبًا.');
@@ -487,4 +475,4 @@
         });
     </script>
 </body>
-</h
+</html>
